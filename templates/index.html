@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src='/static/jquery-3.2.1.js'></script>
+    <title>Title</title>
+</head>
+<body>
+<h1>这是首页</h1>
+{#{{ article_dic }}#}
+{% for i in article_dic %}
+    {% for n in article_dic[i] %}
+        {{ article_dic[i][n] }}
+    {% endfor %}
+{% endfor %}
+</body>
+</html>
